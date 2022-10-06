@@ -32,9 +32,9 @@ Editors.EditorID
 /* Relationships
 
 Authors.AuthorID, Books.AuthorID, N:N
-Books.IBSN, Sales_Orders.IBSN, N:N
 Publishers.PublisherID, Books.PublisherID, 1:N
 Editors.EditorID, Books.EditorID, 1:N
 Books.IBSN, Sales_Orders.IBSN, 1:N
+Publishers.PublisherID, Editors.PublishedID, 1:N
 
 */
