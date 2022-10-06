@@ -1,0 +1,40 @@
+/* Entities and Properties
+
+Entities:
+Authors
+Books
+Publishers
+Sales_Orders
+Editors
+
+Properties:
+AuthorID, First_Name, Last_Name, Age, City, State, Published_Book_Num
+IBSN, Title, Num_of_Pages, Genre, Subgenre, Author_Name, Editor_Name, AuthorID, PublisherID, EditorID
+PublisherID, Address_Num, Street_Name, City, State, Country
+SO_Number, Line_Item_Number, Sales_Date, Customer_Name, Shipping_Address, IBSN, CustomerID
+EditorID, First_Name, Last_Name, Age, City, State, PublisherID
+
+*/
+
+
+/* Primary Keys
+
+Authors.AuthorID
+Books.IBSN
+Publishers.PublisherID
+Sales_Orders.SO_Number
+Sales_Orders.Line_Item_Number
+Editors.EditorID
+
+*/
+
+
+/* Relationships
+
+Authors.AuthorID, Books.AuthorID, N:N
+Books.IBSN, Sales_Orders.IBSN, N:N
+Publishers.PublisherID, Books.PublisherID, 1:N
+Editors.EditorID, Books.EditorID, 1:N
+Books.IBSN, Sales_Orders.IBSN, 1:N
+
+*/
