@@ -64,12 +64,13 @@ CREATE TABLE Editors	(
 
 CREATE TABLE Books	(
 	IBSN				int NOT NULL AUTO_INCREMENT,
-    Title 				varchar(20) NOT NULL,
+    Title 				varchar(100) NOT NULL,
     Num_of_Pages		int NOT NULL,
     Genre				varchar(20) NULL,
     Subgenre			varchar(20) NULL,
     Author_Name			varchar(20) NULL,
     Editor_Name			varchar(20) NULL,
+    Royalties			double NOT NULL,
     AuthorID			int NOT NULL,
     PublisherID			int NOT NULL,
     EditorID			int NOT NULL,
